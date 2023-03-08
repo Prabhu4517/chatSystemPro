@@ -1,0 +1,14 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#9b1fe9 0%, rgb(255, 131, 193) 100%);
+  font-size: 1rem;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+img {
+  width: 10rem;
+}
