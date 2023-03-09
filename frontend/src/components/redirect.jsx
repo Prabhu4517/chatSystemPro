@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 
 function Redirect() {
-    return <Navigate to="/dashboard" />;
+    return <Navigate to="/auth/login" />;
 }
 export default Redirect;
 

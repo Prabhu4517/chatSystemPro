@@ -1,10 +1,13 @@
+import React from "react";
 import Auth from "pages/auth/index";
 import Dashboard from "pages/dashboard/index";
 import Redirect from "components/redirect";
 import Login from "pages/auth/login";
 import Register from "pages/auth/register";
+import ResetPassword from "pages/auth/ResetPassword";
+import ResetPasswordConfirm from "pages/auth/ResetPasswordConfirm";
 import Home from "pages/dashboard/home";
-import { auth_path, dashboard_path, login, register } from "./appUrls";
+import { auth_path, dashboard_path, login, register, resetPassword, resetPasswordConfirm } from "./appUrls";
 
 export const appComponents = [
     {
@@ -29,6 +32,16 @@ export const authComponents = [
         index: true,
         path: login,
         element: <Login />,
+    },
+    {
+        index: false,
+        path: resetPassword,
+        element: <ResetPassword />,
+    },
+    {
+        index: false,
+        path: resetPasswordConfirm,
+        element: <ResetPasswordConfirm />,
     },
     {
         index: false,
